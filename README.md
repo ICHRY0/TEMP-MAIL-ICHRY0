@@ -1,11 +1,14 @@
 <a href="IMG_20241206_084422.jpg">
   <img src="IMG_20241206_084422.jpg" alt="Description of Image">
 </a>
-# TEMP-MAIL-ICHRY0
+<br>
+#TEMP-MAIL-ICHRY0
+<pre></pre>
 - TempMail is a simple web application that allows you to generate temporary email addresses and view the emails received by these addresses. 
 
  
 ⚠️ This project is purely for educational purposes. We do not allow illegal things to be done with this project and we are not responsible for any incidents that may occur. Use it legally ⚠️
+</pre>
 
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmehmetkahya0%2Ftemp-mail&label=VISITORS&labelColor=%23d9e3f0&countColor=%23263759)
 (visitor since 6 DECEMBER 2024)
