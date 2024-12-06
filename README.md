@@ -8,7 +8,7 @@
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmehmetkahya0%2Ftemp-mail&label=VISITORS&labelColor=%23d9e3f0&countColor=%23263759)
 (visitor since 6 DECEMBER 2024)
 ## Live
-- [Live Website!](https://mehmetkahya0.github.io/temp-mail/)
+- [Live Website!](https://ichry0.github.io/TEMP-MAIL-ICHRY0/)
 ## Features
 Generate a new temporary email address
 
