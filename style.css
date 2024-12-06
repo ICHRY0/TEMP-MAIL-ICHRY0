@@ -1,0 +1,331 @@
+/* Author: Mehmet Kahya */
+/* Created: 17 March 2024 */
+/* Last Updated: 5 May 2024 */
+
+:root {
+  font-family: "Inter", sans-serif !important;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--light-color);
+  color: var(--font-color);
+  font-size: var(--font-size);
+  transition: var(--transition);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --primary-color: #040e66;
+  --secondary-color: #6c757d;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --font-color: #212529;
+  --font-size: 1.2rem;
+  --border-radius: 0.25rem;
+  --transition: all 0.5s ease;
+}
+
+header ::selection {
+  background-color: transparent;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  padding: 1rem 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .ascii-art {
+  font-size: 0.6rem;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+  font-size: 60%;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-weight: bolder !important;
+}
+
+button {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bolder !important;
+  border: 1px solid var(--dark-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  margin: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #06138b;
+  color: white !important;
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+button.danger {
+  background-color: var(--danger-color);
+  color: var(--light-color);
+}
+
+button.success {
+  background-color: var(--success-color);
+  color: var(--light-color);
+}
+
+input {
+  padding: 0.25rem;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--secondary-color);
+  margin: 0.25rem;
+  width: 100%;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1001; /* Above other elements */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.popup .main {
+  font-weight: bolder;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.horizontalContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#addr {
+  flex: 1;
+  max-width: 49%;
+}
+
+.horizontalContainer button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#emails {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#emails th,
+#emails td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#emails th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-align: center;
+  font-size: small;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-weight: bolder !important;
+}
+
+.social {
+  width: fit-content;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.social a {
+  margin: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  color: var(--main-fonts-color);
+}
+
+.social a:hover {
+  color: rgb(214, 227, 243);
+}
+
+.warning-button {
+  display: flex !important;
+  position: absolute;
+  bottom: 0 !important;
+  left: 0 !important;
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.75rem !important;
+}
+
+.warning-button:hover {
+  background-color: var(--danger-color);
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  button {
+    font-size: 0.5rem;
+  }
+  input {
+    font-size: 0.76rem;
+  }
+  table {
+    font-size: 0.76rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.2rem;
+  }
+
+  header img {
+    width: 100%;
+  }
+  header p {
+    font-size: 50%;
+  }
+  footer {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ascii-art {
+    font-size: 0.5rem !important;
+  }
+  button {
+    font-size: 0.4rem;
+  }
+  input {
+    font-size: 0.6rem;
+  }
+  table {
+    font-size: 0.6rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.2rem;
+  }
+
+  header img {
+    width: 100%;
+  }
+  header p {
+    font-size: 40%;
+  }
+  footer {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 320px) {
+  .ascii-art {
+    font-size: 0.4rem !important;
+  }
+  button {
+    font-size: 0.3rem;
+  }
+  input {
+    font-size: 0.5rem;
+  }
+  table {
+    font-size: 0.5rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.2rem;
+  }
+
+  header img {
+    width: 100%;
+  }
+  header p {
+    font-size: 30%;
+  }
+  footer {
+    font-size: 30%;
+  }
+}
