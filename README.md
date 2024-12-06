@@ -1,4 +1,6 @@
-
+<a href="https://example.com">
+  <img src="https://example.com/image.png" alt="Description of Image">
+</a>
 # TEMP-MAIL-ICHRY0
 - TempMail is a simple web application that allows you to generate temporary email addresses and view the emails received by these addresses. 
 
